@@ -1,4 +1,5 @@
 import random
+import doctest
 
 def bubble_sort(items):
 	for i in range(len(items)):
@@ -11,3 +12,4 @@ if __name__ == '__main__':
 	print 'List before sorting -> ', list_items
 	bubble_sort(list_items)
 	print 'List after soritng -> ', list_items
+	doctest.testmod()
