@@ -8,6 +8,6 @@ def bubble_sort(items):
 
 if __name__ == '__main__':
 	list_items = [random.randint(-50, 100) for c in range(10)]
-	print 'List before sorting  -> ', list_items
+	print 'List before sorting -> ', list_items
 	bubble_sort(list_items)
 	print 'List after soritng -> ', list_items
