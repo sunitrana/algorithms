@@ -1,14 +1,16 @@
-def selection_sort(list):
-	for i in range(len(list)):
+import random
+
+def selection_sort(list_items):
+	for i in range(len(list_items)):
 		min = i
-		for j in range(i+1, len(list)):
-			if list[min] > list[j]:
+		for j in range(i+1, len(list_items)):
+			if list_items[min] > list_items[j]:
 				min  = j
 		if i != min:
-			list[i], list[min]	= list[min],list[i]
+			list_items[i], list_items[min] = list_items[min],list_items[i]
 
 if __name__ == '__main__':
-	list = [12,45,23,98,78,12,566,-1,-2,0,-99,45,3,6]
-	print list
-	selection_sort(list)
-	print list
+	list_items = [random.randint(-50, 100) for c in range(10)]
+	print 'List before sorting  -> ', list_items
+	selection_sort(list_items)
+	print 'List after soritng -> ', list_items
