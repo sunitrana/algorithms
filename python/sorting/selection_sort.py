@@ -10,7 +10,7 @@ def selection_sort(list_items):
 			list_items[i], list_items[min] = list_items[min],list_items[i]
 
 if __name__ == '__main__':
-	list_items = [random.randint(-50, 100) for c in range(10)]
+	list_items = [random.randint(-100, 100) for c in range(10)]
 	print 'List before sorting  -> ', list_items
 	selection_sort(list_items)
 	print 'List after soritng -> ', list_items
